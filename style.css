@@ -1,0 +1,26 @@
+.well {
+    margin-left: 28.5%;
+    position: relative;
+    overflow: hidden;    
+}
+fieldset {
+    height: 160px;
+    float: left;
+    display : block;
+    margin: 0 5px;
+    padding: 5px;
+    border : 1px solid black;
+    }
+button{
+    margin: 5px 46.5%;
+}
+.inpup{
+    margin-bottom: 1% ;
+    display : block;
+    margin-left : 40%;
+    margin-right : 40%;
+    text-align: center;
+    }
+input {
+    text-align: center;
+}
