@@ -79,7 +79,7 @@ const store = [
   },
   {
     name: 'Младший сержант',
-    link: './images/ml.serjant.svg',
+    link: './images/mlSerjant.svg',
     color: 'red',
     stripes: 2,
     stripesType: 'across',
@@ -107,7 +107,7 @@ const store = [
   },
   {
     name: 'Старший сержант',
-    link: './images/st.serjant.svg',
+    link: './images/stSerjant.svg',
     color: 'red',
     stripes: 1,
     stripesType: 'across',
@@ -149,7 +149,7 @@ const store = [
   },
   {
     name: 'Старший прапорщик',
-    link: './images/st.praporshick.svg',
+    link: './images/stPraporshick.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -163,7 +163,7 @@ const store = [
   },
   {
     name: 'Младший лейтенант',
-    link: './images/ml.letenant.svg',
+    link: './images/mlLetenant.svg',
     color: 'green',
     stripes: 1,
     stripesType: 'along',
@@ -191,7 +191,7 @@ const store = [
   },
   {
     name: 'Старший лейтенант',
-    link: './images/st.letenant.svg',
+    link: './images/stLetenant.svg',
     color: 'green',
     stripes: 1,
     stripesType: 'along',
@@ -261,7 +261,7 @@ const store = [
   },
   {
     name: 'Генерал-майор',
-    link: './images/general-major.svg',
+    link: './images/generalMajor.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -275,7 +275,7 @@ const store = [
   },
   {
     name: 'Генерал-лейтенант',
-    link: './images/general-letenant.svg',
+    link: './images/generalLetenant.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -289,7 +289,7 @@ const store = [
   },
   {
     name: 'Генерал-полковник',
-    link: './images/general-polkovnick.svg',
+    link: './images/generalPolkovnick.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -303,7 +303,7 @@ const store = [
   },
   {
     name: 'Генерал армии',
-    link: './images/general of army.svg',
+    link: './images/generalOfArmy.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -317,7 +317,7 @@ const store = [
   },
   {
     name: 'Маршал Российской Федерации',
-    link: './images/marshall RF.svg',
+    link: './images/marshallRF.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
