@@ -51,7 +51,7 @@ function generate() {
 const store = [
   {
     name: 'Рядовой',
-    link: './images/Рядовой.svg',
+    link: './images/ryadovoy.svg',
     color: 'red',
     stripes: 0,
     stripesType: 'no',
@@ -65,7 +65,7 @@ const store = [
   },
   {
     name: 'Ефрейтор',
-    link: './images/Ефрейтор.svg',
+    link: './images/efreytor.svg',
     color: 'red',
     stripes: 1,
     stripesType: 'across',
@@ -79,7 +79,7 @@ const store = [
   },
   {
     name: 'Младший сержант',
-    link: './images/Младший сержант.svg',
+    link: './images/ml.serjant.svg',
     color: 'red',
     stripes: 2,
     stripesType: 'across',
@@ -93,7 +93,7 @@ const store = [
   },
   {
     name: 'Сержант',
-    link: './images/Сержант.svg',
+    link: './images/serjant.svg',
     color: 'red',
     stripes: 3,
     stripesType: 'across',
@@ -107,7 +107,7 @@ const store = [
   },
   {
     name: 'Старший сержант',
-    link: './images/Старший сержант.svg',
+    link: './images/st.serjant.svg',
     color: 'red',
     stripes: 1,
     stripesType: 'across',
@@ -121,7 +121,7 @@ const store = [
   },
   {
     name: 'Старшина',
-    link: './images/Старшина.svg',
+    link: './images/starshina.svg',
     color: 'red',
     stripes: 1,
     stripesType: 'along',
@@ -135,7 +135,7 @@ const store = [
   },
   {
     name: 'Прапорщик',
-    link: './images/Прапорщик.svg',
+    link: './images/praporshick.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -149,7 +149,7 @@ const store = [
   },
   {
     name: 'Старший прапорщик',
-    link: './images/Старший прапорщик.svg',
+    link: './images/st.praporshick.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -163,7 +163,7 @@ const store = [
   },
   {
     name: 'Младший лейтенант',
-    link: './images/Младший лейтенант.svg',
+    link: './images/ml.letenant.svg',
     color: 'green',
     stripes: 1,
     stripesType: 'along',
@@ -177,7 +177,7 @@ const store = [
   },
   {
     name: 'Лейтенант',
-    link: './images/Лейтенант.svg',
+    link: './images/letenant.svg',
     color: 'green',
     stripes: 1,
     stripesType: 'along',
@@ -191,7 +191,7 @@ const store = [
   },
   {
     name: 'Старший лейтенант',
-    link: './images/Старший лейтенант.svg',
+    link: './images/st.letenant.svg',
     color: 'green',
     stripes: 1,
     stripesType: 'along',
@@ -205,7 +205,7 @@ const store = [
   },
   {
     name: 'Капитан',
-    link: './images/Капитан.svg',
+    link: './images/captain.svg',
     color: 'green',
     stripes: 1,
     stripesType: 'along',
@@ -219,7 +219,7 @@ const store = [
   },
   {
     name: 'Майор',
-    link: './images/Майор.svg',
+    link: './images/mayor.svg',
     color: 'green',
     stripes: 2,
     stripesType: 'along',
@@ -233,7 +233,7 @@ const store = [
   },
   {
     name: 'Подполковник',
-    link: './images/Подполковник.svg',
+    link: './images/podpolkovnick.svg',
     color: 'green',
     stripes: 2,
     stripesType: 'along',
@@ -247,7 +247,7 @@ const store = [
   },
   {
     name: 'Полковник',
-    link: './images/Полковник.svg',
+    link: './images/polkovnick.svg',
     color: 'green',
     stripes: 2,
     stripesType: 'along',
@@ -261,7 +261,7 @@ const store = [
   },
   {
     name: 'Генерал-майор',
-    link: './images/Генерал-майор.svg',
+    link: './images/general-major.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -275,7 +275,7 @@ const store = [
   },
   {
     name: 'Генерал-лейтенант',
-    link: './images/Генерал-лейтенант.svg',
+    link: './images/general-letenant.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -289,7 +289,7 @@ const store = [
   },
   {
     name: 'Генерал-полковник',
-    link: './images/Генерал-полковник.svg',
+    link: './images/general-polkovnick.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -303,7 +303,7 @@ const store = [
   },
   {
     name: 'Генерал армии',
-    link: './images/Генерал армии.svg',
+    link: './images/general of army.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
@@ -317,7 +317,7 @@ const store = [
   },
   {
     name: 'Маршал Российской Федерации',
-    link: './images/Маршал Российской Федерации.svg',
+    link: './images/marshall RF.svg',
     color: 'green',
     stripes: 0,
     stripesType: 'no',
