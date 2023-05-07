@@ -7,12 +7,45 @@ fieldset {
     height: 160px;
     float: left;
     display : block;
-    margin: 0 5px;
+    margin: 0 3 px;
     padding: 5px;
     border : 1px solid black;
     }
 button{
-    margin: 5px 46.5%;
+    margin: auto    ;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.buttons{
+    border-radius: 2px;
+	color:black;
+    margin-left: 46.5%; 
+    width: 105px;
+    text-align: center;
+	border:1.5px solid black;
+	background:#ffffff;
+	padding: 3px;
+	text-decoration: none;
+}
+.buttons:hover {
+    background-color:black;
+    background:rgb(221, 221, 221);
+    transition: 0s;
+}
+.wrapper {
+    /* float: right; */
+    position: relative;
+    left: -50%;
+}
+  .wrapimg{
+    position: relative;
+    left: 50%;
+}
+  figure {
+    float:left;
+    font-weight: bold;
+    text-align: center;
 }
 .inpup{
     margin-bottom: 1% ;
@@ -23,4 +56,7 @@ button{
     }
 input {
     text-align: center;
+}
+body {
+    background-color: rgb(241, 233, 222);
 }
