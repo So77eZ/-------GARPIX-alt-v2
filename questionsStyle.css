@@ -1,0 +1,39 @@
+/* Rectangle 1 */
+.Rectangle1{
+position: absolute;
+width: 231px;
+height: 603px;
+left: 489px;
+top: 214px;
+background: #A2BB88;
+}
+
+/* Rectangle 2 */
+.Rectangle2{
+position: absolute;
+width: 231px;
+height: 603px;
+left: 720px;
+top: 214px;
+background: #F79090;
+}
+
+body {
+    background-color: rgb(241, 233, 222);
+}
+
+.text{
+position: absolute;
+width: 66px;
+height: 16px;
+left: 578px;
+top: 406px;
+
+font-family: 'Comic Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+color: #000000;
+}
