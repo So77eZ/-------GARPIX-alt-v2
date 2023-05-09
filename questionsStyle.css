@@ -1,39 +1,163 @@
-/* Rectangle 1 */
-.Rectangle1{
-position: absolute;
-width: 231px;
-height: 603px;
-left: 489px;
-top: 214px;
-background: #A2BB88;
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+.desctop-1 {
+    align-items:flex-start;
+    background-color: #c2b9b2;
+    border: 1px none;
+    display: flex;
+    width: 1920px;
+    gap: 278px;
 }
 
-/* Rectangle 2 */
-.Rectangle2{
-position: absolute;
-width: 231px;
-height: 603px;
-left: 720px;
-top: 214px;
-background: #F79090;
+.hidden,.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+.overlap-group3 {
+    height: 1080px;
+    position: relative;
+    width: 145px;
 }
 
-body {
-    background-color: rgb(241, 233, 222);
+.overlap-group2 {
+    height: 1080px;
+    left: 20px;
+    position:absolute;
+    top: 0px;
+    width: 103px;
 }
 
-.text{
-position: absolute;
-width: 66px;
-height: 16px;
-left: 578px;
-top: 406px;
+.rectangle-2 {
+    background-color: var(--gold);
+    border: 1px solid;
+    border-color: var(--black);
+    height: 33px;
+    left: -524px;
+    position: absolute;
+    top: 524px;
+    transform: rotate(-90deg);
+    width: 1080px;
+}
 
-font-family: 'Comic Neue';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-color: #000000;
+.rectangle-1 {
+    background-color: var(--gold);
+    border: 1px solid;
+    border-color: var(--black);
+    height: 33px;
+    left: -454px;
+    position: absolute;
+    top: 524px;
+    transform: rotate(-90deg);
+    width: 1080px;
+}
+
+.image-1 {
+    height: 160px;
+    left: 0px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    width: 145px;
+}
+
+.overlap-group-containter {
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    gap: 231px;
+    margin-top: 247px;
+    min-height: 472px;
+    width: 1075px;
+}
+
+.overlap-group {
+    border-radius: 54px;
+    height: 108px;
+    margin-left: 11px;
+    position: relative;
+    width: 312px;
+}
+
+.text-1 {
+    left: 37px;
+    position: absolute;
+    top: 4px;
+}
+
+.desctop-1 .text {
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.rectangle-4:hover {
+    background-color: #55603c;
+}
+
+.rectangle-4 {
+    background-color: #70804e;
+    border: 3px solid;
+    border-color: var(--black);
+    border-radius: 54px;
+    cursor: pointer;
+    height: 108px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease;
+    width: 312px;
+}
+
+.overlap-group1 {
+    align-items:flex-start;
+    background-color: #d9d9d9;
+    border: 3px solid;
+    border-color: var(--black);
+    border-radius: 66.5px;
+    display: flex;
+    height: 133px;
+    min-width: 1073px;
+    margin-right: 2px;
+    padding: 13px 2px;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-2 {
+    height: 100px;
+    width: 1064px;
+}
+
+:root {
+    --black: rgba(0,0,0,1);
+    --go-ben: rgba(112,128,78,1);
+    --tea: rgba(194,185,178,1);
+    --gold: rgba(255,214,0,1);
+
+    --font-size-l: 70px;
+    --font-size-xl: 85px;
+    --font-size-m2: 50px;
+
+    --font-family-relaway: "Raleway";
+}
+
+.raleway-normal-black-50px {
+    color: var(--black);
+    font-family: var(--font-family-relaway);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-normal-black-85px {
+    color: var(--black);
+    font-family: var(--font-family-relaway);
+    font-size: var(--font-size-x1);
+    font-weight: 400;
+    font-style: normal;
 }
