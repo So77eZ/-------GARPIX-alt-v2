@@ -2,7 +2,8 @@
 
 .desctop-1 {
     align-items:flex-start;
-    background-color: #c2b9b2;
+    background-color: #f1e9de;
+
     border: 1px none;
     display: flex;
     width: 1920px;
@@ -17,6 +18,7 @@
     height: 1080px;
     position: relative;
     width: 145px;
+    display: flex;
 }
 
 .overlap-group2 {
@@ -70,20 +72,6 @@
     width: 1075px;
 }
 
-.overlap-group {
-    border-radius: 54px;
-    height: 108px;
-    margin-left: 11px;
-    position: relative;
-    width: 312px;
-}
-
-.text-1 {
-    left: 37px;
-    position: absolute;
-    top: 4px;
-}
-
 .desctop-1 .text {
     letter-spacing: 0;
     line-height: normal;
@@ -107,19 +95,51 @@
     top: 0;
     transition: all 0.2s ease;
     width: 312px;
+    display: inline-block; /* Строчно-блочный элемент */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 100px;
+    /* identical to box height */
+    
+    text-align: center;
+    text-decoration: none;
+    
+    color: #000000;
 }
 
-.overlap-group1 {
-    align-items:flex-start;
+.rectangle-3 {
     background-color: #d9d9d9;
     border: 3px solid;
     border-color: var(--black);
     border-radius: 66.5px;
-    display: flex;
     height: 133px;
-    min-width: 1073px;
+    width: 1073px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    /* box-sizing: border-box;
+    left: 423px;
+    top: 247px;
+    */
+}
+
+.overlap-group {
+    border-radius: 54px;
+    height: 108px;
+    margin-left: 11px;
+    position: relative;
+    width: 312px;
+}
+
+.overlap-group1 {
+    border-color: var(--black);
+    border-radius: 66.5px;
+    height: 133px;
+    width: 1073px;
     margin-right: 2px;
-    padding: 13px 2px;
+    position: relative;
 }
 
 .valign-text-middle {
@@ -128,9 +148,40 @@
     justify-content: center;
 }
 
-.text-2 {
-    height: 100px;
+.text2 {
+    position: absolute;
     width: 1064px;
+    height: 133px;
+    margin: 0%;
+    top: 5%;
+    left: 8%;    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 100px;    
+    display: flex;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.text1 {
+    position: absolute;
+    width: 238px;
+    height: 100px;
+    left: 12.5%;    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 100px;
+    /* identical to box height */
+    
+    text-align: center;
+    text-decoration: none;
+    
+    color: #000000;
 }
 
 :root {
