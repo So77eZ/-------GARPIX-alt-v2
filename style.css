@@ -3,6 +3,16 @@
     position: relative;
     overflow: hidden;    
 }
+
+a{
+    color:black;
+    font-weight: 400;
+}
+
+p{
+    font-size: larger;
+}
+
 fieldset {
     height: 160px;
     float: left;
@@ -46,6 +56,7 @@ button{
     float:left;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 2%;
 }
 .inpup{
     margin-bottom: 1% ;
@@ -58,5 +69,9 @@ input {
     text-align: center;
 }
 body {
-    background-color: rgb(241, 233, 222);
+    background-color: #f1e9de;
+}
+.questions{
+    text-align: center; 
+    padding: 10px;
 }
