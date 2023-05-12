@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="./index.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    
     <div class="desctop-1 screen">
         <div class="overlap-group3">
             <div class="overlap-group2">
@@ -21,14 +21,26 @@
         <div class="overlap-group-containter">
             <div class="overlap-group1">
                 <div class="rectangle-3"></div>
-                <h1 class="text2">Определитель званий</h1>
+                <h1 id="header" class="text2">Определитель званий</h1>
             </div>
-            <div class="overlap-group">
-                <a href="./questions/1qColour.html" class="rectangle-4" class="text1">Старт</a>
+            <fieldset>
+                <div><img id="image" src=""  width="138" height="356"></div>
+            </fieldset>
+            <fieldset>
+                <div><input id="question" disabled value="ТУТ БУДЕТ ВОПРОС"/></div>
+            <div>
+                <input name="quiz-radio" id="answer1" type="radio" value="1">
+                <input id="answer1-label" disabled value=""/>
             </div>
+            <div>
+                <input name="quiz-radio" id="answer2" type="radio" value="2">
+                <input id="answer2-label" disabled value=""/>
+            </div>
+                <button onclick="answer()">ответить бобен</button>
+            </fieldset>
+            <button onclick="startQuiz()">начать викторину</button>
         </div>
     </div>
-    <p><a href="oldVersion.html" style="float: left; margin-right: 15px;">Другая версия</a></p>
-    <p><a href="results/spavo4.html" class="buttons" style="float: left;">Список званий</a></p>
+    <p><a href="./spavo4.html" class="buttons" style="float: left;">Список званий</a></p>
 </body>
 </html>

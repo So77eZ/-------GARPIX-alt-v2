@@ -1,57 +1,95 @@
-let currentRankName = '';
+let currentRank = {};
 
 function init() {
-  console.log(currentRankName);
   const randomIndex = Math.floor(Math.random() * (store.length));
   const rank = store[randomIndex];
+  currentRank = rank;
 
-  currentRankName = rank.name;
+  console.log(currentRank);
 
   document.getElementById('image').src = rank.link;
 }
-
-
 window.onload = init;
 
-
-
-
-function generate() {
-  const selectedColour = document.querySelector('input[name="color"]:checked').value;
-  const countOfStripes = Number(document.getElementById("stripes").value);
-  const countOfStars = Number(document.getElementById("stars").value);
-  const starsType = document.querySelector('input[name="star"]:checked').value;
-  const stripesType = document.querySelector('input[name="stripe"]:checked').value;
-  const stripesThick = document.querySelector('input[name="stripeThick"]:checked').value;
-  const emblem = document.getElementById("emblem").checked;
-  const edging = document.getElementById("edging").checked;
-  const wreath = document.getElementById("wreath").checked;
-  const pattern = document.getElementById("pattern").checked;
-
-
-  const foundRank = store.find((obj) => {
-    return obj.color === selectedColour &&
-      obj.stripes === countOfStripes &&
-      obj.stars === countOfStars &&
-      obj.starsType === starsType &&
-      obj.stripesType === stripesType &&
-      obj.stripesThick === stripesThick &&
-      obj.emblem === emblem &&
-      obj.edging === edging &&
-      obj.wreath === wreath &&
-      obj.pattern === pattern;
-  });
-
-
-
-  if (currentRankName !== foundRank?.name) {
-    alert('не найдено');
-  } else {
-    document.getElementById('label').value = foundRank.name;
-    alert('найдено');
-  }
+function startQuiz() {
+  updateQuestion(questionTree)
 }
 
+function updateQuestion(question) {
+  currentNode = question;
+  document.getElementById('question').value = question.label;
+  document.getElementById('answer1-label').value = question.answer1;
+  document.getElementById('answer2-label').value = question.answer2;
+}
+
+function answer() {
+  const answerId = document.querySelector('input[name="quiz-radio"]:checked').value;
+  const nextQuestion = currentNode[Number(answerId)];
+
+  if (typeof nextQuestion == 'string') {
+    let message = 'Вы не угадали звание!';
+    if (currentRank.name === nextQuestion) {
+      message = `Вы угадали: ${nextQuestion}`;
+    }
+
+    document.getElementById("header").innerHTML = message;
+    return;
+  }
+
+ updateQuestion(nextQuestion);
+}
+
+let currentNode = {};
+
+const yesno = {
+  answer1: 'Да',
+  answer2: 'Нет'
+}
+
+const questionTree = {
+  label: 'Какой цвет?',
+  answer1: 'Зеленый',
+  answer2: 'Красный',
+  1: {
+    label: 'Наличие звезд',
+    ...yesno,
+    1: {
+      label: 'Одна звезда?',
+      ...yesno,
+      1: {
+        label: 'Есть диагональный узор и окантовка?',
+        ...yesno,
+        1: {
+          label: 'Есть венок?',
+          ...yesno,
+          1: 'Генерал армии',
+          2: {
+            label: 'Есть герб?',
+            ...yesno,
+            1: 'Маршал Российской Федерации',
+            2: 'Генерал-майор'
+          }
+        },
+        2: {
+          label: 'Есть полосы?',
+          ...yesno,
+          1: {
+            label: 'Одна полоса?',
+            ...yesno,
+            1: 'Младший лейтенант',
+            2: 'Майор'
+          },
+          2: ''
+        }
+      },
+    }
+  },
+  2: {
+    label: 'Есть ли полосы?',
+    answer1: 'Да',
+    answer2: 'Нет'
+  }
+};
 
 const store = [{
   name: 'Рядовой',
@@ -333,6 +371,4 @@ const store = [{
   wreath: false,
   pattern: true
 },
-
-
 ];
